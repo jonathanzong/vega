@@ -8,6 +8,8 @@ const SELECTION_ID = '_vgsid_',
     TYPE_RANGE_EXC = 'R-E',
     TYPE_RANGE_LE = 'R-LE',
     TYPE_RANGE_RE = 'R-RE',
+    TYPE_PRED_LTE = 'E-LTE',
+    TYPE_PRED_GT = 'E-GT',
     UNIT_INDEX = 'index:unit';
 
 // TODO: revisit date coercion?
@@ -42,6 +44,12 @@ function testPoint(datum, entry) {
         if (!inrange(dval, values[i], false, false)) return false;
       } else if (f.type === TYPE_RANGE_LE) {
         if (!inrange(dval, values[i], false, true)) return false;
+      }
+
+      else if (f.type === TYPE_PRED_LTE) {
+        if (dval > values[i]) return false;
+      } else if (f.type === TYPE_PRED_GT) {
+        if (dval <= values[i]) return false;
       }
     }
   }
