@@ -126,6 +126,7 @@ import {
 import {
   data,
   indata,
+  fieldvaluesforkey,
   setdata
 } from './functions/data';
 
@@ -400,6 +401,7 @@ expressionFunction('geoBounds', geoBounds, scaleVisitor);
 expressionFunction('geoCentroid', geoCentroid, scaleVisitor);
 expressionFunction('geoShape', geoShape, scaleVisitor);
 expressionFunction('indata', indata, indataVisitor);
+expressionFunction('fieldvaluesforkey', fieldvaluesforkey, dataVisitor);
 expressionFunction('data', data, dataVisitor);
 expressionFunction('treePath', treePath, dataVisitor);
 expressionFunction('treeAncestors', treeAncestors, dataVisitor);

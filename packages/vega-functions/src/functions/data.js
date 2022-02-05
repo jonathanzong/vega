@@ -11,6 +11,11 @@ export function indata(name, field, value) {
   return entry ? entry.count : entry;
 }
 
+export function fieldvaluesforkey(name, field, keyfield, key) {
+  const data = this.context.data[name];
+  return data ? data.values.value.filter(datum => datum[keyfield] == key).map(datum => datum[field]) : [];
+}
+
 export function setdata(name, tuples) {
   const df = this.context.dataflow,
         data = this.context.data[name],
