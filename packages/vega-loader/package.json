@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "d3-dsv": "^2.0.0",
+    "fs": "^0.0.1-security",
     "node-fetch": "^2.6.1",
     "topojson-client": "^3.1.0",
     "vega-format": "^1.0.4",
