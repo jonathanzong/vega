@@ -119,8 +119,7 @@ import {
 } from 'd3-ease';
 
 import {
-  interpolateBasis,
-  interpolateBasisClosed
+  interpolateCatmullRom
 } from './functions/interpolate';
 
 import {
@@ -292,8 +291,7 @@ export const functionContext = {
   easeBounceIn,
   easeBounceOut,
   easeBounceInOut,
-  interpolateBasis,
-  interpolateBasisClosed,
+  interpolateCatmullRom,
   sequence,
   format,
   utcFormat,

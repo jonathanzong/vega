@@ -1,12 +1,7 @@
 import {
-  interpolateBasis as d3InterpolateBasis,
-  interpolateBasisClosed as d3InterpolateBasisClosed
-} from 'd3-interpolate';
+  interpolateCatmullRom as d3InterpolateCatmullRom,
+} from 'd3-interpolate-curve';
 
-export function interpolateBasis(array, fraction) {
-  return d3InterpolateBasis(array)(fraction);
-}
-
-export function interpolateBasisClosed(array, fraction) {
-  return d3InterpolateBasisClosed(array)(fraction);
+export function interpolateCatmullRom(array, fraction) {
+  return d3InterpolateCatmullRom(array)(fraction);
 }
