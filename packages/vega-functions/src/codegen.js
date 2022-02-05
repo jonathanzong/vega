@@ -121,7 +121,7 @@ import {
 import {
   interpolateBasis,
   interpolateBasisClosed
-} from 'd3-interpolate'
+} from './functions/interpolate';
 
 import {
   data,
