@@ -119,6 +119,11 @@ import {
 } from 'd3-ease';
 
 import {
+  interpolateBasis,
+  interpolateBasisClosed
+} from 'd3-interpolate'
+
+import {
   data,
   indata,
   setdata
@@ -286,6 +291,8 @@ export const functionContext = {
   easeBounceIn,
   easeBounceOut,
   easeBounceInOut,
+  interpolateBasis,
+  interpolateBasisClosed,
   sequence,
   format,
   utcFormat,
