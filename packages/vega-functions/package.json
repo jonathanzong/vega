@@ -26,6 +26,7 @@
     "d3-ease": "^3.0.1",
     "d3-geo": "^2.0.1",
     "d3-interpolate-curve": "^1.0.2",
+    "lodash": "^4.17.21",
     "vega-dataflow": "^5.7.4",
     "vega-expression": "^5.0.0",
     "vega-scale": "^7.1.1",
